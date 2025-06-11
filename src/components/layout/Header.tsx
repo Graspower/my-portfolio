@@ -9,7 +9,7 @@ import { siteConfig, navItems } from "@/config/site";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { ThemeToggleButton } from "./ThemeToggleButton"; // Added import
+import { ThemeToggleButton } from "./ThemeToggleButton";
 
 export function Header() {
   const pathname = usePathname();
@@ -64,7 +64,7 @@ export function Header() {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full max-w-xs bg-background p-6">
+            <SheetContent side="right" className="w-full max-w-[18rem] bg-background p-6">
               <div className="flex flex-col space-y-6">
                 <SheetClose asChild>
                   <Link href="/" className="text-lg font-bold text-primary flex items-center gap-2">
