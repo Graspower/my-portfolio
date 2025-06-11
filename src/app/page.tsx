@@ -7,22 +7,24 @@ import { siteConfig } from "@/config/site";
 export default function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center text-center py-12 md:py-20">
-      <div className="relative w-40 h-40 md:w-48 md:h-48 mb-8 rounded-full overflow-hidden shadow-2xl border-4 border-primary">
-        <Image
-          src="/images/oscar p.jpg"
-          alt="Your Name - Headshot"
-          layout="fill"
-          objectFit="cover"
-          priority
-          data-ai-hint="professional headshot"
-        />
+      <div className="relative w-40 h-40 md:w-48 md:h-48 mb-8">
+        <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-primary">
+          <Image
+            src="/images/oscar p.jpg"
+            alt="Your Name - Headshot"
+            layout="fill"
+            objectFit="cover"
+            priority
+            data-ai-hint="professional headshot"
+          />
+        </div>
         {siteConfig.links.github && (
           <Link
             href={siteConfig.links.github}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="absolute bottom-3 left-3 z-10"
+            className="absolute bottom-3 left-[-1.75rem] z-10"
           >
             <Github className="h-6 w-6 text-accent hover:text-primary hover:fill-primary transition-all duration-200 ease-in-out hover:scale-110" />
           </Link>
@@ -33,7 +35,7 @@ export default function HomePage() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="absolute bottom-3 right-3 z-10"
+            className="absolute bottom-3 right-[-1.75rem] z-10"
           >
             <Linkedin className="h-6 w-6 text-accent hover:text-primary hover:fill-primary transition-all duration-200 ease-in-out hover:scale-110" />
           </Link>
