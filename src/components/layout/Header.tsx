@@ -9,6 +9,7 @@ import { siteConfig, navItems } from "@/config/site";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
+import { ThemeToggleButton } from "./ThemeToggleButton"; // Added import
 
 export function Header() {
   const pathname = usePathname();
@@ -20,8 +21,8 @@ export function Header() {
       className={cn(
         "relative group flex items-center gap-2 text-sm font-medium transition-colors",
         pathname === href
-          ? "text-primary hover:text-foreground dark:hover:text-primary/80" // Active links: light hover text-foreground, dark hover text-primary with 80% opacity
-          : "text-muted-foreground hover:text-primary" // Inactive links: hover text-primary
+          ? "text-primary hover:text-foreground dark:hover:text-primary/80"
+          : "text-muted-foreground hover:text-primary"
       )}
       onClick={() => setIsMobileMenuOpen(false)}
     >
@@ -41,17 +42,21 @@ export function Header() {
           {siteConfig.name}
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6">
-          {navItems.map((item) => (
-            <NavLink key={item.href} href={item.href} icon={item.icon}>
-              {item.title}
-            </NavLink>
-          ))}
-        </nav>
+        {/* Desktop Navigation & Theme Toggle */}
+        <div className="hidden md:flex items-center space-x-6">
+          <nav className="flex items-center space-x-6">
+            {navItems.map((item) => (
+              <NavLink key={item.href} href={item.href} icon={item.icon}>
+                {item.title}
+              </NavLink>
+            ))}
+          </nav>
+          <ThemeToggleButton />
+        </div>
 
-        {/* Mobile Navigation */}
-        <div className="md:hidden">
+        {/* Mobile Navigation & Theme Toggle */}
+        <div className="flex items-center md:hidden">
+          <ThemeToggleButton />
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
