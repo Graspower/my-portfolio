@@ -24,10 +24,10 @@ export default function AboutPage() {
           </CardHeader>
           <CardContent className="space-y-4 text-foreground/80 leading-relaxed">
             <p>
-              From a young age, I've been captivated by the power of technology to transform our world. My academic journey in [Your Field of Study, e.g., Computer Science, Quantum Physics] at [Your University] provided a strong foundation, which I've built upon through continuous learning and hands-on experience in various innovative projects.
+              From a young age, I've been captivated by the power of technology to transform our world. My academic journey in Artificial intelligence and Cloud computing at Google Cloud skills boost provided a strong foundation, which I've built upon through continuous learning and hands-on experience in various innovative projects.
             </p>
             <p>
-              I've had the privilege of working on [mention 1-2 key experiences or types of projects, e.g., "pioneering research in AI ethics," "developing scalable cloud solutions for startups," "contributing to open-source quantum computing libraries"]. These experiences have honed my technical abilities and solidified my commitment to creating technology that is not only powerful but also responsible and beneficial to society.
+              I've had the privilege of working on Matthew Bible AI and Face recognition gate attendance system. These experiences have honed my technical abilities and solidified my commitment to creating technology that is not only powerful but also responsible and beneficial to society.
             </p>
             <p>
               My approach is characterized by a blend of analytical rigor, creative problem-solving, and a collaborative spirit. I thrive in dynamic environments where I can push boundaries and explore uncharted territories in tech.
@@ -58,10 +58,10 @@ export default function AboutPage() {
           </CardHeader>
           <CardContent className="space-y-4 text-foreground/80 leading-relaxed">
             <p>
-              Technology, for me, is more than just code and circuits; it's a medium for innovation and a catalyst for positive change. I am particularly fascinated by the potential of [mention specific areas like AI, quantum computing, decentralized systems] to address some of the world's most pressing challenges, from climate change to healthcare.
+              Technology, for me, is more than just code and circuits; it's a medium for innovation and a catalyst for positive change. I am particularly fascinated by the potential of Artificial intelligence and cloud computing to address some of the world's most pressing challenges, from climate change to healthcare.
             </p>
             <p>
-              I believe in a future where technology empowers individuals, fosters collaboration, and creates a more equitable and sustainable world. My work is driven by this vision, and I am constantly seeking new ways to contribute to this technological frontier. I am an avid follower of emerging trends and enjoy engaging with the tech community through [mention activities like conferences, hackathons, writing, open-source contributions].
+              I believe in a future where technology empowers individuals, fosters collaboration and creates a more equitable and sustainable world. My work is driven by this vision and I am constantly thinking new ways to contribute to this technological frontier. I am intiged by emerging trends and love engaging with tech communities through; conferences, hackathons, writing and open-source contributions.
             </p>
           </CardContent>
         </Card>

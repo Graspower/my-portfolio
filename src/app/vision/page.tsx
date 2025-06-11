@@ -21,13 +21,13 @@ export default function VisionPage() {
           </CardHeader>
           <CardContent className="space-y-3 text-foreground/80 leading-relaxed">
             <p>
-              Deepen my expertise in [Specific Tech Area 1, e.g., Quantum Machine Learning] by contributing to cutting-edge research and open-source projects.
+              Deepen my expertise in Artificial Inteligence and cloud computing by contributing to cutting-edge research, Innovation and open-source projects.
             </p>
             <p>
-              Lead a small, agile team to develop and launch an innovative product or service in [Specific Domain, e.g., sustainable technology or AI-driven education].
+              Lead a TIC Community, to learn technical skill, develop and launch innovative products or services in sustainable technology and AI-driven education.
             </p>
             <p>
-              Expand my professional network by actively participating in industry conferences, workshops, and thought leadership discussions.
+              Expand my professional network by actively participating in industry conferences, workshops and thought leadership discussions.
             </p>
           </CardContent>
         </Card>
@@ -41,10 +41,10 @@ export default function VisionPage() {
           </CardHeader>
           <CardContent className="space-y-3 text-foreground/80 leading-relaxed">
             <p>
-              Become a recognized leader and innovator in [Broader Tech Field, e.g., Applied Artificial Intelligence or Decentralized Systems], driving significant advancements and setting new industry standards.
+              Become a remarkable leader and innovator in; Artificial Intelligence and Cloud Computing driving significant advancements and setting new industry standards.
             </p>
             <p>
-              Establish or contribute significantly to a venture that tackles a major global challenge using technology, such as [Global Challenge, e.g., climate change mitigation, global health access, or digital divide].
+              Establish or contribute significantly to a venture that tackles a major global challenge using technology, such as Education, Healthcare, Agriculture and Technology innovation.
             </p>
             <p>
               Mentor and inspire the next generation of technologists, fostering a culture of innovation, ethical responsibility, and continuous learning.
@@ -68,7 +68,7 @@ export default function VisionPage() {
             My goal is to contribute to an ecosystem where innovation thrives responsibly, ensuring that technological advancements benefit humanity as a whole and promote a sustainable and equitable future.
           </p>
           <p>
-            I plan to actively contribute to open standards, share knowledge through publications and talks, and collaborate with diverse minds to foster a more interconnected and impactful global tech community.
+            I plan to actively contribute to open standards, share knowledge through publications & talks, and collaborate with diverse minds to foster a more interconnected and impactful global tech community.
           </p>
         </CardContent>
       </Card>

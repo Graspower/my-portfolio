@@ -1,5 +1,5 @@
 import type { NavItem, Project, Skill } from '@/types';
-import { Home, User, Briefcase, Eye, Sparkles, Lightbulb, FlaskConical, Code2, Brain, Cloud, Database, GitMerge, Users, ShieldCheck, Zap, Cpu } from 'lucide-react';
+import { Home, User, Briefcase, Eye, Lightbulb, FlaskConical, Code2, Brain, Cloud, Database, GitMerge, Users, ShieldCheck, Zap, Cpu } from 'lucide-react';
 
 export const siteConfig = {
   name: "Oscar Portfolio",
@@ -17,14 +17,13 @@ export const navItems: NavItem[] = [
   { title: "About", href: "/about", icon: User },
   { title: "Projects", href: "/projects", icon: Briefcase },
   { title: "Vision", href: "/vision", icon: Eye },
-  { title: "Skills Match", href: "/skills-match", icon: Sparkles },
 ];
 
 export const projects: Project[] = [
   {
     id: "proj1",
     title: "Matthew an AI-Powered bible reader",
-    description: "Developing Good News.ai",
+    description: "Developing a bible app intergrated with Matthew an search for providing bible verses and providing teachings on various bible topics.",
     imageUrl: "https://placehold.co/600x400.png",
     dataAiHint: "abstract technology",
     category: "Innovation",
@@ -34,11 +33,11 @@ export const projects: Project[] = [
   {
     id: "proj2",
     title: "Face recognition gate attendance system",
-    description: "Led research into simulating quantum algorithms on classical hardware, contributing to a novel framework for quantum experimentation.",
+    description: "Implementing an offline student attendance system using ArcFace for facial recognition and cosine similarity for identity matching.",
     imageUrl: "https://placehold.co/600x400.png",
-    dataAiHint: "futuristic circuit",
+    dataAiHint: "Security system",
     category: "Research",
-    tags: ["Quantum Computing", "Python", "Simulation"],
+    tags: ["AI/ML", "Python", "Automation"],
     projectUrl: "#",
   },
   {
@@ -93,12 +92,12 @@ export const skills: Skill[] = [
   { name: "Artificial Intelligence", icon: Brain, description: "Expertise in ML models, NLP, and computer vision." },
   { name: "Machine Learning", icon: Zap, description: "Developing predictive models and data-driven solutions." },
   { name: "Quantum Computing", icon: Cpu, description: "Exploring next-gen computational paradigms." },
-  { name: "Blockchain Technology", icon: GitMerge, description: "Building decentralized applications and systems." },
+  { name: "Innovative Thinking", icon: GitMerge, description: "Ability to generate new ideas that improve new systems." },
   { name: "Cloud Architecture", icon: Cloud, description: "Designing scalable and resilient cloud infrastructure." },
   { name: "Data Science & Analytics", icon: Database, description: "Extracting insights from complex datasets." },
   { name: "Software Development", icon: Code2, description: "Proficient in Python, TypeScript, Go, and Rust." },
   { name: "Cybersecurity", icon: ShieldCheck, description: "Implementing robust security protocols and threat mitigation." },
-  { name: "Project Management", icon: Users, description: "Leading technical teams and delivering complex projects." },
+  { name: "Project Management", icon: Users, description: "Leading technical and operational teams to delivering innovative projects." },
   { name: "IoT Solutions", icon: Lightbulb, description: "Innovating with connected devices and smart systems." },
 ];
 
