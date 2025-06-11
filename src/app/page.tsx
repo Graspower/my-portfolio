@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, User, Briefcase } from "lucide-react";
+import { ArrowRight, User, Briefcase, Github, Linkedin } from "lucide-react";
+import { siteConfig } from "@/config/site";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,28 @@ export default function HomePage() {
           priority
           data-ai-hint="professional headshot"
         />
+        {siteConfig.links.github && (
+          <Link
+            href={siteConfig.links.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            className="absolute bottom-3 left-3 z-10"
+          >
+            <Github className="h-6 w-6 text-accent hover:text-primary hover:fill-primary transition-all duration-200 ease-in-out hover:scale-110" />
+          </Link>
+        )}
+        {siteConfig.links.linkedin && (
+          <Link
+            href={siteConfig.links.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            className="absolute bottom-3 right-3 z-10"
+          >
+            <Linkedin className="h-6 w-6 text-accent hover:text-primary hover:fill-primary transition-all duration-200 ease-in-out hover:scale-110" />
+          </Link>
+        )}
       </div>
       <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
         <span className="text-primary">Oscar M. Muriithi</span>
