@@ -1,8 +1,9 @@
+
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react"; // Removed X as it's not used directly here anymore, SheetClose handles it
 import { useState } from "react";
 import { siteConfig, navItems } from "@/config/site";
 import { Button } from "@/components/ui/button";
@@ -17,13 +18,17 @@ export function Header() {
     <Link
       href={href}
       className={cn(
-        "flex items-center gap-2 text-sm font-medium transition-colors hover:text-primary",
+        "relative group flex items-center gap-2 text-sm font-medium transition-colors hover:text-primary", // Added 'relative' and 'group'
         pathname === href ? "text-primary" : "text-muted-foreground"
       )}
-      onClick={() => setIsMobileMenuOpen(false)}
+      onClick={() => setIsMobileMenuOpen(false)} // This helps close mobile menu on nav
     >
       <Icon className="h-4 w-4" />
       {children}
+      {/* Animated underline */}
+      <span
+        className="absolute bottom-[-2px] left-0 h-px w-0 bg-primary transition-all duration-300 ease-out group-hover:w-full"
+      ></span>
     </Link>
   );
 
@@ -55,10 +60,12 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="w-full max-w-xs bg-background p-6">
               <div className="flex flex-col space-y-6">
-                <Link href="/" className="text-lg font-bold text-primary flex items-center gap-2" onClick={() => setIsMobileMenuOpen(false)}>
-                  <SparklesIcon className="h-5 w-5 text-accent" />
-                  {siteConfig.name}
-                </Link>
+                <SheetClose asChild>
+                  <Link href="/" className="text-lg font-bold text-primary flex items-center gap-2">
+                    <SparklesIcon className="h-5 w-5 text-accent" />
+                    {siteConfig.name}
+                  </Link>
+                </SheetClose>
                 <nav className="flex flex-col space-y-4">
                   {navItems.map((item) => (
                      <SheetClose asChild key={item.href}>

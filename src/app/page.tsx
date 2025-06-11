@@ -24,9 +24,9 @@ export default function HomePage() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="absolute bottom-3 left-[-31px] z-10"
+            className="absolute bottom-3 left-[-36px] z-12"
           >
-            <Github className="h-6 w-6 text-accent hover:text-primary hover:fill-primary transition-all duration-200 ease-in-out hover:scale-110" />
+            <Github className="h-6 w-6 text-accent hover:text-primary hover:fill-primary transition-all duration-200 ease-in-out hover:scale-120" />
           </Link>
         )}
         {siteConfig.links.linkedin && (
@@ -35,9 +35,9 @@ export default function HomePage() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="absolute bottom-3 right-[-31px] z-10"
+            className="absolute bottom-3 right-[-36px] z-12"
           >
-            <Linkedin className="h-6 w-6 text-accent hover:text-primary hover:fill-primary transition-all duration-200 ease-in-out hover:scale-110" />
+            <Linkedin className="h-6 w-6 text-accent hover:text-primary hover:fill-primary transition-all duration-200 ease-in-out hover:scale-120" />
           </Link>
         )}
       </div>
