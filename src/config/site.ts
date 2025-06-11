@@ -2,13 +2,13 @@ import type { NavItem, Project, Skill } from '@/types';
 import { Home, User, Briefcase, Eye, Sparkles, Lightbulb, FlaskConical, Code2, Brain, Cloud, Database, GitMerge, Users, ShieldCheck, Zap, Cpu } from 'lucide-react';
 
 export const siteConfig = {
-  name: "Innovision Portfolio",
+  name: "Oscar Portfolio",
   description: "A technology innovator portfolio showcasing my potential.",
   url: "https://example.com", // Replace with your actual domain
-  ogImage: "https://example.com/og.jpg", // Replace with your actual OG image
+  ogImage: "/images/star.png", // Replace with your actual OG image
   links: {
-    github: "https://github.com/yourusername", // Replace with your GitHub
-    linkedin: "https://linkedin.com/in/yourusername", // Replace with your LinkedIn
+    github: "https://github.com/Graspower", // Replace with your GitHub
+    linkedin: "https://www.linkedin.com/in/oscar-munene-76ab4829a/", // Replace with your LinkedIn
   },
 };
 
@@ -23,17 +23,17 @@ export const navItems: NavItem[] = [
 export const projects: Project[] = [
   {
     id: "proj1",
-    title: "AI-Powered Recommendation Engine",
-    description: "Developed a personalized recommendation system using collaborative filtering and content-based approaches, improving user engagement by 25%.",
+    title: "Matthew an AI-Powered bible reader",
+    description: "Developing Good News.ai",
     imageUrl: "https://placehold.co/600x400.png",
     dataAiHint: "abstract technology",
     category: "Innovation",
-    tags: ["AI/ML", "Python", "Data Science"],
+    tags: ["AI/ML", "typescript", "Data Science"],
     projectUrl: "#",
   },
   {
     id: "proj2",
-    title: "Quantum Computing Simulation Framework",
+    title: "Face recognition gate attendance system",
     description: "Led research into simulating quantum algorithms on classical hardware, contributing to a novel framework for quantum experimentation.",
     imageUrl: "https://placehold.co/600x400.png",
     dataAiHint: "futuristic circuit",
