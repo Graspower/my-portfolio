@@ -18,8 +18,10 @@ export function Header() {
     <Link
       href={href}
       className={cn(
-        "relative group flex items-center gap-2 text-sm font-medium transition-colors hover:text-foreground",
-        pathname === href ? "text-primary" : "text-muted-foreground"
+        "relative group flex items-center gap-2 text-sm font-medium transition-colors",
+        pathname === href
+          ? "text-primary hover:text-foreground dark:hover:text-primary" // Active links
+          : "text-muted-foreground hover:text-primary" // Inactive links
       )}
       onClick={() => setIsMobileMenuOpen(false)}
     >
