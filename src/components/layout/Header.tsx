@@ -21,7 +21,7 @@ export function Header() {
       className={cn(
         "relative group flex items-center gap-2 text-sm font-medium transition-colors",
         pathname === href
-          ? "text-primary hover:text-foreground dark:hover:text-primary/80"
+          ? "text-primary dark:hover:text-primary/80 hover:text-foreground"
           : "text-muted-foreground hover:text-primary"
       )}
       onClick={() => setIsMobileMenuOpen(false)}
@@ -64,7 +64,7 @@ export function Header() {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full max-w-[18rem] bg-background p-6">
+            <SheetContent side="right" className="w-1/3 bg-background p-6">
               <div className="flex flex-col space-y-6">
                 <SheetClose asChild>
                   <Link href="/" className="text-lg font-bold text-primary flex items-center gap-2">
