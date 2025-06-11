@@ -3,7 +3,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu } from "lucide-react"; // Removed X as it's not used directly here anymore, SheetClose handles it
+import { Menu } from "lucide-react";
 import { useState } from "react";
 import { siteConfig, navItems } from "@/config/site";
 import { Button } from "@/components/ui/button";
@@ -18,7 +18,7 @@ export function Header() {
     <Link
       href={href}
       className={cn(
-        "relative group flex items-center gap-2 text-sm font-medium transition-colors hover:text-primary",
+        "relative group flex items-center gap-2 text-sm font-medium transition-colors hover:text-foreground",
         pathname === href ? "text-primary" : "text-muted-foreground"
       )}
       onClick={() => setIsMobileMenuOpen(false)}
