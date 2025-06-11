@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site";
 export default function HomePage() {
   return (
     <div className="flex flex-col items-center justify-center text-center py-12 md:py-20">
-      <div className="relative w-40 h-40 md:w-48 md:h-48 mb-8">
+      <div className="relative w-40 h-56 md:w-48 md:h-64 mb-8">
         <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl border-4 border-primary">
           <Image
             src="/images/oscar p.jpg"
