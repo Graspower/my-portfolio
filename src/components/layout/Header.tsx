@@ -18,16 +18,15 @@ export function Header() {
     <Link
       href={href}
       className={cn(
-        "relative group flex items-center gap-2 text-sm font-medium transition-colors hover:text-primary", // Added 'relative' and 'group'
+        "relative group flex items-center gap-2 text-sm font-medium transition-colors hover:text-primary",
         pathname === href ? "text-primary" : "text-muted-foreground"
       )}
-      onClick={() => setIsMobileMenuOpen(false)} // This helps close mobile menu on nav
+      onClick={() => setIsMobileMenuOpen(false)}
     >
       <Icon className="h-4 w-4" />
       {children}
-      {/* Animated underline */}
       <span
-        className="absolute bottom-[-2px] left-0 h-px w-0 bg-primary transition-all duration-300 ease-out group-hover:w-full"
+        className="absolute bottom-[-4px] left-0 h-[3px] w-0 bg-primary transition-all duration-300 ease-out group-hover:w-full"
       ></span>
     </Link>
   );
