@@ -12,12 +12,12 @@ export function Footer() {
         <div className="flex items-center space-x-4">
           {siteConfig.links.github && (
             <Link href={siteConfig.links.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <Github className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
+              <Github className="h-6 w-6 text-accent hover:text-primary transition-colors" />
             </Link>
           )}
           {siteConfig.links.linkedin && (
             <Link href={siteConfig.links.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
+              <Linkedin className="h-6 w-6 text-accent hover:text-primary transition-colors" />
             </Link>
           )}
         </div>
